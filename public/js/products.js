@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const result = await response.json();
             if (response.ok) {
                 alert(result.message);
-            } else {
+            } else {gi
                 alert(result.message || 'Failed to add to wishlist.');
             }
         } catch (error) {
