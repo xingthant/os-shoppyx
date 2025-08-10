@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart | Vercel Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Vercel Shop</a>
+        <nav class="nav">
+            <a href="/products.html">Products</a>
+            <a href="/wishlist.html">Wishlist</a>
+            <a href="/cart.html">Cart</a>
+            <a href="/login.html" id="auth-link">Login</a>
+            <button id="logout-btn" class="hidden">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items-container">
+            </div>
+        <div id="cart-summary" class="hidden">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+        <p id="empty-cart-message">Your cart is empty.</p>
+    </main>
+    <script src="/js/cart.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

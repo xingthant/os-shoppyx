@@ -1,0 +1,37 @@
+vercel-online-shop/
+├── public/
+│   ├── index.html
+│   ├── products.html
+│   ├── product-detail.html
+│   ├── cart.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── wishlist.html
+│   ├── admin.html
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       ├── main.js
+│       ├── auth.js
+│       ├── products.js
+│       ├── cart.js
+│       ├── wishlist.js
+│       └── admin.js
+├── api/
+│   ├── auth/
+│   │   ├── login.js
+│   │   └── signup.js
+│   ├── cart.js
+│   ├── checkout.js 
+│   ├── orders.js
+│   ├── products.js
+│   └── wishlist.js
+├── utils/
+│   ├── db.js
+│   └── auth.js
+├── vercel.json
+├── package.json
+└── .env.example
+
+
+db password = xerlok1822004

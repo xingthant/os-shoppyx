@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vercel Online Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Vercel Shop</a>
+        <nav class="nav">
+            <a href="/products.html">Products</a>
+            <a href="/wishlist.html">Wishlist</a>
+            <a href="/cart.html">Cart</a>
+            <a href="/login.html" id="auth-link">Login</a>
+            <button id="logout-btn" class="hidden">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Welcome to Our Shop!</h1>
+
+        <section class="featured-products">
+            <h2>Featured Products 🌟</h2>
+            <div id="featured-products-grid" class="product-grid">
+                </div>
+        </section>
+
+        <section class="discount-products">
+            <h2>On Sale Now! 🔥</h2>
+            <div id="discount-products-grid" class="product-grid">
+                </div>
+        </section>
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

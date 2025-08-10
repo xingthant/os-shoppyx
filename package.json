@@ -1,0 +1,9 @@
+{
+  "name": "vercel-online-shop",
+  "version": "1.0.0",
+  "description": "An online shop deployed on Vercel",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Vercel Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Vercel Shop</a>
+        <nav class="nav">
+            <a href="/products.html">Products</a>
+            <a href="/wishlist.html">Wishlist</a>
+            <a href="/cart.html">Cart</a>
+            <a href="/login.html" id="auth-link">Login</a>
+            <button id="logout-btn" class="hidden">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Admin Dashboard</h1>
+
+        <section id="add-product-section">
+            <h2>Add New Product</h2>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" id="price" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="discount-percentage">Discount (%)</label>
+                    <input type="number" id="discount-percentage" min="0" max="100" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <input type="text" id="category" required>
+                </div>
+                <div class="form-group">
+                    <label for="image-url">Image URL</label>
+                    <input type="text" id="image-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock</label>
+                    <input type="number" id="stock" required>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" id="is-featured"> Mark as Featured</label>
+                </div>
+                <button type="submit" class="btn">Add Product</button>
+            </form>
+        </section>
+
+        <section id="manage-products-section">
+            <h2>Manage Products</h2>
+            <div id="product-list-container">
+                </div>
+        </section>
+    </main>
+
+    <script src="/js/admin.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

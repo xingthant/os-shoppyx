@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist | Vercel Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">Vercel Shop</a>
+        <nav class="nav">
+            <a href="/products.html">Products</a>
+            <a href="/wishlist.html">Wishlist</a>
+            <a href="/cart.html">Cart</a>
+            <a href="/login.html" id="auth-link">Login</a>
+            <button id="logout-btn" class="hidden">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Your Wishlist</h1>
+        <div id="wishlist-items-grid" class="product-grid">
+            </div>
+        <p id="empty-wishlist-message" class="hidden">Your wishlist is empty. Start adding products!</p>
+        <p id="login-required-message" class="hidden">Please <a href="/login.html">log in</a> to view your wishlist.</p>
+    </main>
+    <script src="/js/wishlist.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
