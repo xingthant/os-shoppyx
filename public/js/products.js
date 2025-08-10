@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     'Authorization': `Bearer ${token}`
                 },
                 body: JSON.stringify({ productId })
-            });
+            });got
 
             const result = await response.json();
             if (response.ok) {
